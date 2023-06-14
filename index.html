@@ -4,17 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--===== BOOTSTRAP =====-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- =====BOX ICONS===== -->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+  
+  
   <title>giuseppetoscano</title>
 </head>
 
-<body style="background-color:#202225">
+<body >
+
+  
+  <!--<p class = "home__title">Hi, I am <b>Giuseppe Toscano</b>&nbsp;<span id="lightning_cursor"></span></p>-->
+  
   <!--===== HEADER =====-->
+  
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
@@ -37,20 +45,40 @@
     </nav>
   </header>
 
-  <main class="l-main">
+ <main class="l-main">
     <!--===== HOME =====-->
     <section class="home bd-grid" id="home">
+      
       <div class="home__data">
-        <h1 class="home__title">Hi, I am <span class="home__title-color">Giuseppe Toscano</span> <img src="assets/img/hand.png" style="display: inline; height:52px; margin-left:0.5%;" /></h1>
-        <h2 class="home__subtitle"><a class="home__subtitle-link" href="#skills">Full Stack Developer</a> - <a class="home__subtitle-link" href="#skills">Ethical Hacker</a></h2>
+        
+        <div class="container text-center">
+          <div class="row waving_hand">
+          👋🏼
+          
+          </div>
+          <div class="row" >
+            <p class="home_title" >Hi, I am <b class="orange">Giuseppe Toscano</b>&nbsp;<span id="lightning_cursor"></span></p>
+            </div>
+          </div>
+          <div class="row justify-content-center showMeAfter7Seconds"><h2 class="home__subtitle"><a class="home__subtitle-link" href="#skills">Developer</a> - <a class="home__subtitle-link" href="#skills">Ethical Hacker</a></h2></div>
+          <div class="row justify-content-center showMeAfter8Seconds">
+            <a href="assets/docs/cv.pdf" target="_blank" download class="home__social-icon"><i class='bx bx-file'></i></a>
+            <a href="https://www.linkedin.com/in/giuseppe-toscano-a63789190/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/giuseppe-toscano" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+          </div>
+          
 
+          
+       
+       <!--<p class = "home__title">Hi, I am <b>Giuseppe Toscano</b>&nbsp;<span id="lightning_cursor"></span></p>-->
+       
+        <!--<h1 class="home__title">Hi, I am <span class="home__title-color">Giuseppe Toscano</span> <img src="assets/img/hand.png" style="display: inline; height:52px; margin-left:0.5%;" /></h1>
+        
+-->
         <!--<a href="#" class="button">Contact me</a>-->
-        <div class="home__social">
-          <a href="assets/docs/cv.pdf" target="_blank" download class="home__social-icon"><i class='bx bx-file'></i></a>
-          <a href="https://www.linkedin.com/in/giuseppe-toscano-a63789190/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://github.com/giuseppe-toscano" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
-        </div>
-      </div>
+       <!-- -->
+
+     </div>
 
       <div class="mouse_scroll">
         <div>
@@ -69,21 +97,21 @@
 
     <!--===== ABOUT =====-->
     <section class="about section " id="about">
-      <h2 class="section-title">About</h2>
 
       <div class="about__container bd-grid">
         <div class="about__img">
-          <img src="assets/img/about.png" alt="">
+          <img src="assets/img/memoji.png" alt="">
         </div>
 
         <div>
-          <h2 class="about__subtitle">whoami</h2>
-          <p class="about__text">Currently I am working as a penetration tester in the Reply cybersecurity team. During my daily work, I perform vulnerability assessments and penetration tests against web applications provided by clients belonging to the financial world. 
+          <h2 class="about__subtitle orange">whoami</h2>
+          <p class="about__text">Currently I am working as an <b class="white">ethical hacker</b> in the <b class="white">Reply</b> cybersecurity team. During my daily work, I perform <b class="white">vulnerability assessments</b> and  <b class="white">penetration tests</b> against web applications and remote machines. 
 
-            I describe myself as ambitious and driven. I enjoy facing new challenges every day and constantly set goals for myself, so I always have something to strive towards. I am a sociable person who loves team working and team leadership.
+            I describe myself as  <b class="white">ambitious and driven</b>. I enjoy facing new challenges every day and constantly set goals for myself, so I always have something to strive towards. I am a  <b class="white">sociable person</b> who loves  <b class="white">team working</b> and  <b class="white">team leadership</b>.
             
-            I love finding vulnerabilities in web apps and I have a deep knowledge of all the most common ones, such as SQLi, XSS, CSRF, and RCE. Moreover, I am always open to discover new security threats to improve my skills. 
-            </p>
+            I love finding vulnerabilities and I have a deep knowledge of all the most common ones. Moreover, I am always open to discover new security threats to improve my skills. 
+            Since I was a child, I have always been fascinated by the IT world. This is the reason why, some years ago, I decided to study <b class="white">Computer Engineering</b> at <b class="white">Polytechnic University of Turin</b>. In particular, after my bachelor’s degree, I chose to follow a slightly different path more related to <b class="white">Cyber Security</b>, obtaining a master’s degree in April 2022.  
+          </p>
         </div>
       </div>
     </section>
@@ -229,7 +257,7 @@
     </section>-->
 
     <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
+    <!--<section class="contact section" id="contact">
       <h2 class="section-title">Contact</h2>
 
       <div class="contact__container bd-grid">
@@ -241,14 +269,13 @@
         </form>
       </div>
     </section>
-  </main>
+  </main>-->
 
   <!--===== FOOTER =====-->
   <footer class="footer">
-    <p class="footer__title">Giuseppe Toscano</p>
     <div class="footer__social">
-      <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-      <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+      <a href="https://it-it.facebook.com/giuseppe.toscano13198" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/giuseppe_toscano13/" target="_blank" class="footer__icon"><i class='bx bxl-instagram'></i></a>
     </div>
     <p>&#169; 2023 copyright all right reserved</p>
   </footer>
@@ -259,6 +286,11 @@
 
   <!--===== MAIN JS =====-->
   <script src="assets/js/main.js"></script>
+
+  <!--===== BOOTSTRAP =====-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 
 </html>
