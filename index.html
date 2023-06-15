@@ -57,7 +57,7 @@
           
           </div>
           <div class="row" >
-            <p class="home_title" >Hi, I am <b class="orange">Giuseppe Toscano</b>&nbsp;<span id="lightning_cursor"></span></p>
+            <p class="home__title" >Hi, I am <b class="orange">Giuseppe Toscano</b>&nbsp;<span id="lightning_cursor"></span></p>
             </div>
           </div>
           <div class="row justify-content-center showMeAfter7Seconds"><h2 class="home__subtitle"><a class="home__subtitle-link" href="#skills">Developer</a> - <a class="home__subtitle-link" href="#skills">Ethical Hacker</a></h2></div>
@@ -104,7 +104,7 @@
         </div>
 
         <div>
-          <h2 class="about__subtitle orange">whoami</h2>
+          <h2 class="about__subtitle"><b>whoami</b></h2>
           <p class="about__text">Currently I am working as <b class="white">ethical hacker</b> in the <b class="white">Reply</b> cybersecurity team. During my daily work, I perform <b class="white">vulnerability assessments</b> and  <b class="white">penetration tests</b> against web applications and remote machines. 
 
             I describe myself as  <b class="white">ambitious and driven</b>. I enjoy facing new challenges every day and constantly set goals for myself, so I always have something to strive towards. I am a  <b class="white">sociable person</b> who loves  <b class="white">team working</b> and  <b class="white">team leadership</b>.
@@ -257,19 +257,31 @@
     </section>-->
 
     <!--===== CONTACT =====-->
-    <!--<section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
+    <section class="contact section" id="contact">
+      <h2 class="section-title"><b>Contact</b></h2>
 
-      <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-          <input type="text" placeholder="Name" class="contact__input">
-          <input type="mail" placeholder="Email" class="contact__input">
-          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-          <input type="button" value="Send" class="contact__button button">
+      <div class="contact__container bd-grid" >
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="218cc84b-c6e2-4de0-a365-f6dd1e2d96e4">
+          <div class="form-floating" >
+            <input type="text" class="form-control contact__input" placeholder="Your name" name="name" id="nameInput" required>
+            <label for="nameInput">Your name</label>
+          </div>
+         <div class="form-floating" >
+          <input type="email" class="form-control contact__input" placeholder="Your email address" id="emailInput" name="email" required>
+          <label for="emailInput">Email address</label>
+        </div>
+        
+        <div class="form-floating">
+          <textarea class="form-control contact__input" placeholder="Leave a comment here" id="floatingTextarea2" name="message" style="height: 100px" required></textarea>
+          <label for="floatingTextarea2">Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </section>
-  </main>-->
+  </main>-
 
   <!--===== FOOTER =====-->
   <footer class="footer">
@@ -291,6 +303,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <!-- ===== WEB3FORMS ===== -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>

@@ -12,6 +12,8 @@
   --background-color: #222831;
   --background2-color:#393E46;
   --accent-color:#D65A31;
+  --darker-accent-color:#BF4D24;
+  --darker2-accent-color:#B04720;
   --text-color:#EEEEEE;
   --light-background-color:#40444b;
 }
@@ -20,14 +22,14 @@
 :root {
   --body-font: 'Menlo', monospace; 
   --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
+  --h2-font-size: 1.35rem;
   --normal-font-size: 0.938rem;
 }
 
 @media screen and (min-width: 768px) {
   :root {
-    --big-font-size: 3.5rem;
-    --h2-font-size: 1.25rem;
+    --big-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
   }
 }
@@ -97,20 +99,9 @@ img {
   text-align: center;
 }
 
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 64px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 2rem;
-  background-color: var(--text-color);
-}
 
 .section {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -122,8 +113,8 @@ img {
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
   width: calc(100% - 2rem);
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .l-header {
@@ -179,11 +170,15 @@ img {
   height: 0.18rem;
   left: 0;
   top: 1.5rem;
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
 }
 
 .nav__logo {
   color: var(--text-color);
+}
+
+.nav__logo:hover{
+  color:var(--accent-color);
 }
 
 .nav__toggle {
@@ -201,7 +196,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 1.5rem;
-  background-color: var(--accent-color);
+  background-color: var(--text-color);
 }
 
 /*=== Show menu ===*/
@@ -238,11 +233,11 @@ ul{
 /* Animation stuff */
 
 
-.home_title {
+.home__title {
   position: relative;
   float: left;
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--big-font-size);
   letter-spacing: 0px;
   color: var(--text-color);
   padding-right: 0;
@@ -299,7 +294,7 @@ ul{
 
 .home__subtitle {
   font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
   margin-top:var(--mb-1);
   color: var(--light-background-color);
   width: auto;
@@ -481,6 +476,7 @@ ul{
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
+  color:var(--text-color);
 }
 
 .about__text {
@@ -594,16 +590,16 @@ ul{
 }
 
 /* ===== CONTACT =====*/
+.contact__container {
+  text-align: center;
+}
 
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--background-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 
 .contact__button {
@@ -617,11 +613,12 @@ ul{
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--background-color);
+  background-color: var(--background2-color);
   color: var(--text-color);
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .footer__title {
@@ -635,12 +632,12 @@ ul{
 
 .footer__icon {
   font-size: 1.5rem;
-  color:var(--light-background-color);
+  color:var(--text-color);
   margin: 0 var(--mb-2)
 }
 
 .footer__icon:hover {
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -656,7 +653,7 @@ ul{
   }
 
   .section-title {
-    margin-bottom: var(--mb-6);
+    margin-bottom: var(--mb-4);
   }
 
   .section-title::after {
@@ -674,7 +671,7 @@ ul{
   }
 
   .nav__item {
-    margin-left: var(--mb-6);
+    margin-left: var(--mb-4);
     margin-bottom: 0;
   }
 
@@ -692,7 +689,7 @@ ul{
 
   .home__social-icon {
     margin-bottom: 0;
-    font-size:1.25rem;
+    font-size:1.5rem;
   }
 
   .home__img {
@@ -716,12 +713,9 @@ ul{
     column-gap: 2rem;
   }
 
-  .contact__form {
-    width: 360px;
-  }
-
   .contact__container {
-    justify-items: center;
+    width: 350px;
+    text-align: center;
   }
 }
 
@@ -774,7 +768,7 @@ ul{
 
 
 @media screen and (max-width: 535px) {
-  .home_title{
+  .home__title{
     font-size: 1.4rem;
   }
 
@@ -790,4 +784,22 @@ ul{
     font-size: 4rem;
   }
 
+}
+
+
+.btn-primary{
+  background-color: var(--accent-color);
+  border-color: var(--background2-color);
+  color:var(--text-color);
+  font-family: var(--body-font);;
+}
+
+.btn-primary:hover{
+  background-color: var(--darker-accent-color);
+  border-color: var(--background2-color);
+}
+
+.btn-primary:active, .btn-primary:visited{
+  background-color: var(--darker2-accent-color) !important;
+  border-color: var(--background2-color) !important;
 }
