@@ -736,12 +736,6 @@ ul{
   }
 }
 
-@media screen and (max-width: 535px) {
-  .home_title{
-    font-size: 1.5rem;
-  }
-}
-
 
 .waving_hand {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -750,7 +744,7 @@ ul{
   animation-delay: 1s;
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
-  font-size: 5rem
+  font-size: 5rem;
 }
 
 @keyframes wave-animation {
@@ -776,4 +770,24 @@ ul{
   0% { opacity: 0; }
   75% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+
+@media screen and (max-width: 535px) {
+  .home_title{
+    font-size: 1.4rem;
+  }
+
+  .home__subtitle {
+    font-size:1.2rem;
+  }
+
+  .home__social-icon {
+    font-size: 1.2rem;
+  }
+
+  .waving_hand {
+    font-size: 4rem;
+  }
+
 }
