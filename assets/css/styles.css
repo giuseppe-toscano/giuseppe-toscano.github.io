@@ -219,8 +219,8 @@ img {
 .home__data {
   overflow: hidden;
     margin: 0 auto;
-    margin-top: calc(50vh - var(--header-height) - 8rem);
-    /*background-color: red;*/
+    align-self: center;
+    text-align: center;
 }
 
 
@@ -733,6 +733,12 @@ ul{
 
   .home__img {
     right: 10%;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .home_title{
+    font-size: 1.5rem;
   }
 }
 
